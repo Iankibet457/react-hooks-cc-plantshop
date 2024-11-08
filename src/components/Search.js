@@ -1,29 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-function Search({setPlant , plants}) {
-  // const handleInput = (e)=>{
-  //   e.preventDefault()
-  //   const val ={
-
-  //     value: e.target.name.value
-  //   }
-  //   console.log(val)
-  // }
-
+function Search({ setPlant, plants }) {
+  const [searchPlant, setSearchPlant] = useState("");
+  const handleInput = (e) => {
+    const value = e.target.value;
+    setSearchPlant(value); 
+  };
+  useEffect(() => {
+    
+    const filteredPlants = plants.filter((plant) =>
+      plant.name.toLowerCase().includes(searchPlant.toLowerCase()) 
+    )
+    if (filteredPlants.length !== plants.length) {
+      setPlant(filteredPlants); 
+    }
+  }, [searchPlant, plants, setPlant]); 
 
   return (
     <div className="searchbar">
-      {/* <form onSubmit={handleInput}> */}
-
       <label htmlFor="search">Search Plants:</label>
-      <input 
+      <input
         type="text"
         id="search"
-        name="plant-name"
+        value={searchPlant}
         placeholder="Type a name to search..."
-        onChange={(e) => console.log("Searching...")}
+        onChange={handleInput} 
       />
-      {/* </form> */}
     </div>
   );
 }
