@@ -41,6 +41,12 @@
       "name": "Fiddle Leaf Fig",
       "image": "./images/fiddle-leaf-fig.jpg",
       "price": 55
+    },
+    {
+      "name": "Patio",
+      "image": "https://shorturl.at/VT7c1",
+      "price": "11.11",
+      "id": 8
     }
   ]
 }
