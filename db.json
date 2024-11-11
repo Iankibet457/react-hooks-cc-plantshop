@@ -43,10 +43,28 @@
       "price": 55
     },
     {
-      "name": "Patio",
-      "image": "https://shorturl.at/VT7c1",
-      "price": "11.11",
-      "id": 8
+      "name": "aloe 2",
+      "image": "./images/aloe.jpg",
+      "price": "20.12",
+      "id": 9
+    },
+    {
+      "name": "aloe 2",
+      "image": "./images/aloe.jpg",
+      "price": "20.12",
+      "id": 10
+    },
+    {
+      "name": "aloe 2",
+      "image": "./images/aloe.jpg",
+      "price": "20.12",
+      "id": 11
+    },
+    {
+      "name": "aloe 2",
+      "image": "./images/aloe.jpg",
+      "price": "20.12",
+      "id": 12
     }
   ]
 }

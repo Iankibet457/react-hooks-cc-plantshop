@@ -9,9 +9,7 @@ function PlantCard({setPlant ,plants}) {
     .then(data => setPlant(data))
   },[setPlant])
 
-  // function handleClick(plant){
-  //   plant = false
-  // }
+  
   
 
   
